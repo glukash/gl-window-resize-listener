@@ -1,28 +1,19 @@
 {
-  "name": "@glukash/gl-window-resize-listener",
+  "name": "@glulab/gl-window-resize-listener",
   "version": "1.0.0",
   "description": "Window resize listener.",
-    "main": "js/gl-window-resize-listener.js",
+  "main": "js/gl-window-resize-listener.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glukash/gl-window-resize-listener.git"
+    "url": "git+https://github.com/glulab/gl-window-resize-listener.git"
   },
-  "keywords": [
-    "window",
-    "resize",
-    "listener"
-  ],
-  "author": "Łukasz Gaszyna",
-  "license": "MIT",
-  "dependencies": {
-    "jquery": "1.9.1 - 3",
-    "lodash.debounce": "^4.0.0"
-  },
+  "author": "Lukasz Gaszyna",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/glukash/gl-window-resize-listener/issues"
+    "url": "https://github.com/glulab/gl-window-resize-listener/issues"
   },
-  "homepage": "https://github.com/glukash/gl-window-resize-listener#readme"
+  "homepage": "https://github.com/glulab/gl-window-resize-listener#readme"
 }
