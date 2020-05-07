@@ -7,7 +7,15 @@ export class GlWindowResizeListener {
 
     constructor(options) {
         
+        this.debug = typeof window.debug !== 'undefined' ? window.debug : false;
+        
         this.functions = [];
+    }
+    
+    consoleLog(log = '') {
+        if (this.debug || window.debug) {
+            console.log('GlWindowResizeListener: ' + log);
+        }
     }
     
     init() {
@@ -22,14 +30,14 @@ export class GlWindowResizeListener {
     }
     
     prepare() {
-        console.log( 'GlWindowResizeListener: prepare [' + $().jquery + ']' );
+        this.consoleLog('prepare [' + $().jquery + ']');
         
         this.$window = $(window);
         this.$document = $(document);
     }
     
     run() {
-        console.log( 'GlWindowResizeListener: run [' + $().jquery + ']' );
+        this.consoleLog('run [' + $().jquery + ']');
         
         this.addResizeBinding();
     }
@@ -58,7 +66,7 @@ export class GlWindowResizeListener {
                 return;
             }
             
-            console.log( 'GlWindowResizeListener: run resize window events' );
+            this.consoleLog('run resize window events');
             
             this.functions.forEach((f) => {
                 f.func.apply(f.context);

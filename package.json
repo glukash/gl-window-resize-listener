@@ -1,6 +1,6 @@
 {
   "name": "@glulab/gl-window-resize-listener",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Window resize listener.",
   "main": "js/gl-window-resize-listener.js",
   "scripts": {
