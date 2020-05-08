@@ -12,9 +12,13 @@ export class GlWindowResizeListener {
         this.functions = [];
     }
     
-    consoleLog(log = '') {
+    consoleLog(log = '', prefix = 'GlWindowResizeListener: ') {
         if (this.debug || window.debug) {
-            console.log('GlWindowResizeListener: ' + log);
+            if (prefix !== false) {
+                console.log(prefix + log);
+            } else {
+                console.log(log);
+            }
         }
     }
     
